@@ -5,7 +5,7 @@ import styles from './Header.module.scss';
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>16th Avenue</div>
+      <img src="/header.png" alt="16th Avenue Logo" className={styles.logo} />
       <nav className={styles.nav}>
         <ul>
           <li><a href="#" className={styles.active}>Accueil</a></li>

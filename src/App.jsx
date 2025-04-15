@@ -12,6 +12,8 @@ import FeaturedProperties from './components/FeaturedProperties/FeaturedProperti
 import Commitment from './components/Commitment/Commitment';
 import Commitment2 from './components/Commitment/Commitment2';
 import ClientReviews from './components/ClientReviews/ClientReviews';
+import Faq from './components/Faq/Faq';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -27,6 +29,9 @@ function App() {
       <Commitment />
       <Commitment2/>
       <ClientReviews />
+      <Faq />
+      <Footer />
+
     </>
   );
 }

@@ -8,11 +8,10 @@
     border-bottom: 1px solid #eee;
   
     .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-      color: #333;
+      height: 60px; // ajuste selon ton logo
+      width: auto;
     }
+    
   
     .nav {
       ul {
