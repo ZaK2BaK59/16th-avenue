@@ -2,13 +2,12 @@
   padding: 6rem 5%;
   background: #fff;
 
-  .blockReverse {
+  .block {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
   }
 
   .text {
@@ -45,6 +44,7 @@
         line-height: 1.6;
         max-width: 90%;
         padding-left: 2rem;
+        margin-left: 5rem;
       }
     }
   }
@@ -53,7 +53,7 @@
     width: 510px;
     height: 662px;
     position: relative;
-    margin-left: 40px;
+    margin-right: 40px;
 
     .shape {
       width: 110%;
@@ -63,15 +63,15 @@
       left: 0;
       background-color: #c3a764;
       z-index: 1;
-      border-top-right-radius: 40px;
       border-top-left-radius: 10%;
-      border-bottom-left-radius: 40px;
-      border-bottom-right-radius: 500%;
+      border-top-right-radius: 40px;
+      border-bottom-left-radius: 40%;
+      border-bottom-right-radius: 5000px;
     }
 
     img {
       width: 450px;
-      margin-right: 50px;
+      margin-left: 45px;
       margin-top: 30px;
       height: 662px;
       position: relative;

@@ -11,6 +11,7 @@ import OffMarketListing from './components/OffMarketListing/OffMarketListing';
 import FeaturedProperties from './components/FeaturedProperties/FeaturedProperties';
 import Commitment from './components/Commitment/Commitment';
 import Commitment2 from './components/Commitment/Commitment2';
+import ClientReviews from './components/ClientReviews/ClientReviews';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <FeaturedProperties />
       <Commitment />
       <Commitment2/>
+      <ClientReviews />
     </>
   );
 }

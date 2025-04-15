@@ -1,0 +1,87 @@
+.reviews {
+    padding: 6rem 5%;
+    background-color: #fff;
+    text-align: center;
+  
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-bottom: 4rem;
+      color: #111;
+    }
+  
+    .cards {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+  
+    img {.reviews {
+        padding: 6rem 5%;
+        background: #fff;
+        text-align: center;
+      
+        h2 {
+          font-family: 'Playfair Display', serif;
+          font-size: 3rem;
+          margin-bottom: 3rem;
+          color: #111;
+        }
+      
+        .images {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 2rem;
+          flex-wrap: wrap;
+          
+      
+          img {
+            width: 600px;
+            height: auto;
+            border-radius: 1rem;
+            transition: transform 0.3s ease;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+          }
+      
+          .left {
+            transform: rotate(-6deg);
+          }
+      
+          .center {
+            transform: scale(1.05);
+            z-index: 2;
+            width: 600px;
+          }
+      
+          .right {
+            transform: rotate(6deg);
+          }
+        }
+      }
+      
+      width: 280px;
+      height: auto;
+      transition: all 0.3s ease;
+      border-radius: 20px;
+    }
+  
+    .center {
+      transform: scale(1.05);
+      z-index: 2;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+  
+    .left {
+      transform: rotate(-5deg) translateY(20px);
+      opacity: 0.8;
+    }
+  
+    .right {
+      transform: rotate(5deg) translateY(20px);
+      opacity: 0.8;
+    }
+  }
+  
