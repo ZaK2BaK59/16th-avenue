@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import styles from './FeaturedProperties.module.scss';
 
 const images = [
-    '/carousel1.jpg',
-    '/carousel2.jpg',
-    '/carousel3.jpg',
-    '/carousel4.jpg',
-    '/carousel5.jpg'
+    '/Calif-Vue.png',
+    '/Calif-Vue.png',
+    '/Calif-Vue.png',
+    '/Calif-Vue.png',
+    '/Calif-Vue.png'
   ];
   
 

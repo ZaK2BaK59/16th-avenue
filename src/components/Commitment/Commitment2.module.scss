@@ -12,38 +12,43 @@
 
   .text {
     flex: 1 1 500px;
+    margin-left: 8rem;
+
 
     .item {
       margin-bottom: 3rem;
 
       h3 {
         font-family: 'Playfair Display', serif;
-        font-size: 1.6rem;
+        font-size: 2rem;
         font-weight: 400;
         color: #222;
         margin-bottom: 0.8rem;
         position: relative;
-        padding-left: 2rem;
+        padding-left: 4rem;
 
         &::before {
           content: '';
           position: absolute;
           left: 0;
-          top: 0.4rem;
-          width: 12px;
-          height: 12px;
+          top: 0.8rem;
+          width: 20px;
+          height: 20px;
           background-color: #c3a764;
           border-radius: 50%;
+          margin-left: 4rem;
+          opacity: 70%;
           filter: blur(6px);
         }
       }
 
       p {
-        font-size: 0.9rem;
+        font-family: 'Bell MT', serif;
+        font-size: 1.2rem;
         color: #333;
         line-height: 1.6;
-        max-width: 90%;
-        padding-left: 2rem;
+        max-width: 40%;
+        padding-left: 3rem;
         margin-left: 5rem;
       }
     }
@@ -53,24 +58,24 @@
     width: 510px;
     height: 662px;
     position: relative;
-    margin-right: 40px;
+    margin-right: 50px;
 
     .shape {
-      width: 110%;
+      width: 130%;
       height: 110%;
       position: absolute;
       top: 0;
       left: 0;
       background-color: #c3a764;
       z-index: 1;
-      border-top-left-radius: 10%;
+      border-top-left-radius: 40%;
       border-top-right-radius: 40px;
       border-bottom-left-radius: 40%;
       border-bottom-right-radius: 5000px;
     }
 
     img {
-      width: 450px;
+      width: 550px;
       margin-left: 45px;
       margin-top: 30px;
       height: 662px;

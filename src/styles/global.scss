@@ -14,3 +14,24 @@
     font-size: 112.5%; // 100% = 16px, donc ici 18px ≈ zoom 112.5%
   }
   
+  @font-face {
+    font-family: 'Athena';
+    src: url('/fonts/Athena-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bell MT';
+    src: url('/fonts/BellMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Maginia';
+    src: url('/fonts/Maginia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

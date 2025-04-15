@@ -4,7 +4,7 @@
   
     h2 {
       text-align: center;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Athena', serif;
       font-size: 3rem;
       margin-bottom: 4rem;
       color: #111;
@@ -20,13 +20,14 @@
   
     .text {
         flex: 1 1 500px;
+        margin-left: 8rem;
       
         .item {
           margin-bottom: 3rem;
       
           h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.6rem;
+            font-size: 2rem;
             font-weight: 400;
             color: #222;
             margin-bottom: 0.8rem;
@@ -37,21 +38,24 @@
               content: '';
               position: absolute;
               left: 0;
-              top: 0.4rem;
-              width: 12px;
-              height: 12px;
+              top: 0.8rem;
+              width: 20px;
+              height: 20px;
               background-color: #c3a764;
               border-radius: 50%;
+              opacity: 70%;
+              margin-left: 2rem; // aligné avec le point et le titre
               filter: blur(6px);
             }
           }
       
           p {
-            font-size: 0.9rem;
+            font-family: 'Bell MT', serif;
+            font-size: 1.2rem;
             color: #333;
             margin-left: 5rem;
             line-height: 1.6;
-            max-width: 90%; // augmente un peu pour être + naturel
+            max-width: 60%; // augmente un peu pour être + naturel
             padding-left: 2rem; // aligné avec le point et le titre
           }
         }
@@ -59,7 +63,7 @@
       
   
     .imageWrapper {
-        width: 510px;
+        width: 600px;
         height: 662px;
         position: relative;
         margin-right: 40px;
@@ -73,19 +77,19 @@
           background-color: #c3a764;
           z-index: 1;
           border-top-left-radius: 40px;
-          border-top-right-radius: 10%;
+          border-top-right-radius: 30%;
           border-bottom-right-radius: 40px;
           border-bottom-left-radius: 500%;
         }
       
         img {
-          width: 450px;
+          width: 550px;
           margin-left: 50px;
           margin-top: 30px;
           height: 662px;
           position: relative;
           z-index: 2;
-          border-radius: 0 50% 0 50%;
+          border-radius: 0 30% 0 30%;
           object-fit: cover;
           box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }

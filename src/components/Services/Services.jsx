@@ -9,21 +9,21 @@ import icon3 from '/s3.png';
 
 const services = [
   {
-    title: 'Sécurisez son investissement',
+    title: 'SECURISEZ SON INVESTISSEMENT',
     image: icon1,
     description: `Acheter un bien est une étape clé de votre vie. Grâce à notre expertise, nous vous accompagnons pour faire les meilleurs choix financiers et vous assurer une acquisition sereine et sécurisée.`,
     button: 'Mon projet d’achat',
     color: '#bfa567',
   },
   {
-    title: 'Transmettre son bien',
+    title: 'TRANSMETTRE SON BEIN',
     image: icon2,
     description: `Vous souhaitez vendre ou transmettre votre bien ?<br/>Nous mettons en place une stratégie sur-mesure pour maximiser votre transaction et vous accompagner dans chaque étape du processus.`,
     button: 'Estimer mon bien',
     color: '#d4b97b',
   },
   {
-    title: 'Trouver des solutions sur-mesures',
+    title: 'TROUVER DES SOLUTIONS SUR-MESURES',
     image: icon3,
     description: `Que vous recherchiez un bien spécifique ou une solution sur-mesure, nous vous guidons pour répondre à vos attentes et vous offrir une flexibilité optimale dans votre projet immobilier.`,
     button: 'Mon projet immobilier',

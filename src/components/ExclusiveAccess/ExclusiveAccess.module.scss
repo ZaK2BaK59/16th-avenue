@@ -13,7 +13,7 @@
       flex: 1 1 580px;
   
       h2 {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Athena', serif;
         font-size: 3rem;
         font-weight: 600;
         line-height: 1.3;
@@ -22,7 +22,8 @@
       }
   
       p {
-        font-size: 1rem;
+        font-family: 'Bell MT', serif;
+        font-size: 1.2rem;
         color: #333;
         line-height: 1.8;
         margin-top: 5rem;
@@ -34,6 +35,7 @@
         margin-top: 2rem;
   
         li {
+          font-family: 'Athena', serif;
           display: flex;
           align-items: center;
           margin-bottom: 1rem;
