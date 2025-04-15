@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react';
 import styles from './Stats.module.scss';
 
 const stats = [
+  { label: 'ANNÉES D’EXPÉRIENCES', value: 13, suffix: '+' },
   { label: 'PROJETS REALISÉS', value: 1600, suffix: '+' },
   { label: 'VOLUME DE VENTE RÉALISÉ', value: 350, suffix: 'M+' },
-  { label: 'DE SATISFACTION CLIENT', value: 96, suffix: '%' },
-  { label: 'ANNÉES D’EXPÉRIENCES', value: 12, suffix: '+' },
+  { label: 'DE SATISFACTION CLIENT', value: 95, suffix: '%' },
 ];
 
 const StatBlock = ({ value, suffix, label }) => {

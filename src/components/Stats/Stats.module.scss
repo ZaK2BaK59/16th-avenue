@@ -2,12 +2,19 @@
     text-align: center;
     padding: 4rem 5%;
     background: #fff;
-    margin-top: 15rem;
+    margin-top: 10rem;
   
-    .lineTop, .lineBottom {
-      height: 1px;
+    .lineTop {
+      height: 2px;
       background-color: #bfa567;
-      width: 100px;
+      width: 1000px;
+      margin: 0 auto 2rem;
+    }
+
+    .lineBottom {
+      height: 2px;
+      background-color: #bfa567;
+      width: 700px;
       margin: 0 auto 2rem;
     }
   

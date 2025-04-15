@@ -1,7 +1,7 @@
-// src/components/Services/Services.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Services.module.scss';
 import ServiceCard from './ServiceCard';
+import Popup from './Popup'; // à créer juste après
 
 import icon1 from '/s1.png';
 import icon2 from '/s2.png';
@@ -32,13 +32,19 @@ const services = [
 ];
 
 const Services = () => {
+  const [selectedService, setSelectedService] = useState(null);
+
   return (
     <section className={styles.services}>
       <div className={styles.grid}>
         {services.map((s, i) => (
-          <ServiceCard key={i} {...s} />
+          <ServiceCard key={i} {...s} onClick={() => setSelectedService(s)} />
         ))}
       </div>
+
+      {selectedService && (
+        <Popup data={selectedService} onClose={() => setSelectedService(null)} />
+      )}
     </section>
   );
 };
