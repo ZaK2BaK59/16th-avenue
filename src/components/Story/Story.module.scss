@@ -1,0 +1,74 @@
+.story {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6rem 5%;
+    background: #fff;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 10px;
+  
+    .content {
+      flex: 1 1 520px;
+
+  
+      h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        line-height: 1.3;
+        margin-bottom: 2rem;
+        color: #111;
+      }
+  
+      p {
+        font-style: italic;
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #333;
+        margin-bottom: 2.5rem;
+        border-left: 2px solid #bfa567;
+        padding-left: 1rem;
+
+      }
+  
+      .button {
+        background-color: #bfa567;
+        color: #fff;
+        border: none;
+        padding: 0.9rem 2rem;
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background-color: #a68d57;
+        }
+      }
+    }
+  
+    .imagePlaceholder {
+      flex: 1 1 400px; // au cas où on souhaite y mettre une image plus tard
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .story {
+      flex-direction: column;
+  
+      .content {
+        text-align: center;
+  
+        p {
+          border: none;
+          padding: 0;
+        }
+      }
+  
+      .imagePlaceholder {
+        display: none; // si rien à afficher, on le cache
+      }
+    }
+  }
+  

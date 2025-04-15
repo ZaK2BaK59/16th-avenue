@@ -1,0 +1,44 @@
+.card {
+    background-color: #1D1D1B;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    flex: 1 1 300px;
+  
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    img {
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+  
+    p {
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+  
+    button {
+      padding: 0.8rem 1.6rem;
+      border-radius: 25px;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+  }
+  

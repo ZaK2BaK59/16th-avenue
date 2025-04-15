@@ -1,0 +1,46 @@
+.stats {
+    text-align: center;
+    padding: 4rem 5%;
+    background: #fff;
+    margin-top: 15rem;
+  
+    .lineTop, .lineBottom {
+      height: 1px;
+      background-color: #bfa567;
+      width: 100px;
+      margin: 0 auto 2rem;
+    }
+  
+    .lineBottom {
+      margin-top: 2rem;
+    }
+  
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  
+    .stat {
+      flex: 1 1 180px;
+  
+      .number {
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-family: 'Playfair Display', serif;
+        color: #111;
+      }
+  
+      .label {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        color: #333;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+  
