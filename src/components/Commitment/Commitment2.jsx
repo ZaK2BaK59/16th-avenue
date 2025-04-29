@@ -14,22 +14,22 @@ export default function Commitment2() {
           <div className={styles.item}>
             <h3>Réseau International Puissant</h3>
             <p>
-              Grâce à notre réseau et à notre connaissance du marché, nous vous
-              offrons un accès privilégié aux meilleures opportunités.
+              "Grâce à notre réseau et à notre connaissance du marché, nous vous
+              offrons un accès privilégié aux meilleures opportunités."
             </p>
           </div>
           <div className={styles.item}>
             <h3>Valorisation Et Stratégie Performante</h3>
             <p>
-              Nous mettons en valeur votre bien avec des techniques éprouvées :
+              "Nous mettons en valeur votre bien avec des techniques éprouvées :
               storytelling immobilier, photographie professionnelle et diffusion
-              stratégique optimisée.
+              stratégique optimisée."
             </p>
           </div>
           <div className={styles.item}>
             <h3>Sécurité Et Accompagnement Juridique</h3>
             <p>
-              Un accompagnement juridique et pour sécuriser chaque étape de votre projet immobilier.
+              "Un accompagnement juridique et pour sécuriser chaque étape de votre projet immobilier."
             </p>
           </div>
         </div>

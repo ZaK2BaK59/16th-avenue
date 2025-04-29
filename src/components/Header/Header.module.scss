@@ -1,46 +1,51 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 5%;
-    background-color: #fff;
-    font-family: 'Playfair Display', serif;
-    border-bottom: 1px solid #eee;
+  position: fixed; /* ← ajoute cette ligne */
+  top: 0; /* ← colle en haut */
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* ← pour être sûr qu’il passe devant tout */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5%;
+  background-color: #fff;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 1px solid #eee;
   
-    .logo {
-      height: 60px; // ajuste selon ton logo
-      width: auto;
-    }
-    
+  /* reste inchangé */
+  .logo {
+    height: 80px;
+    width: auto;
+  }
   
-    .nav {
-      ul {
-        list-style: none;
-        display: flex;
-        gap: 2rem;
+  .nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
   
-        li a {
-          text-decoration: none;
-          font-weight: 500;
-          color: #333;
-          transition: color 0.2s ease;
+      li a {
+        text-decoration: none;
+        font-weight: 500;
+        color: #333;
+        transition: color 0.2s ease;
   
-          &:hover {
-            color: #bfa567; // doré au hover
-          }
+        &:hover {
+          color: #bfa567;
         }
+      }
   
-        .active {
-          color: #bfa567; // lien actif doré
-        }
+      .active {
+        color: #bfa567;
       }
     }
   }
-  
-  @media (max-width: 768px) {
-    .nav ul {
-      gap: 1.2rem;
-      font-size: 0.95rem;
-    }
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    gap: 1.2rem;
+    font-size: 0.95rem;
   }
-  
+}

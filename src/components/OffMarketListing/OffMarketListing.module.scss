@@ -1,90 +1,123 @@
 .listing {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 6rem 5%;
+  flex-wrap: wrap;
+  gap: 3rem;
+  /* plus de row-reverse !! */
+
+  .image {
+    flex: 1 1 420px;
+
+    img {
+      width: 80%;
+      border-radius: 25px;
+      object-fit: cover;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+  }
+
+  .content {
+    flex: 1 1 480px;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 6rem 5%;
-    flex-wrap: wrap;
-    gap: 3rem;
-  
+    flex-direction: column;
+    align-items: flex-end; /* <<< ALIGNE TOUT A DROITE */
+
+    h2 {
+      font-size: 3rem;
+      font-family: 'Athena', serif;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      text-align: right; /* <<< TEXTE A DROITE */
+    }
+
+    p {
+      font-family: 'Bell MT', serif;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      color: #333;
+      text-align: right; /* <<< TEXTE A DROITE */
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 2rem;
+      width: 100%;
+    
+      li {
+        display: flex;
+        justify-content: flex-end; /* aligne à droite */
+        align-items: center;
+        margin-bottom: 1rem;
+        font-style: italic;
+        text-align: right;
+    
+        span {
+          display: inline-block;
+        }
+    
+        .icon {
+          background: #111;
+          color: #fff;
+          border-radius: 4px;
+          padding: 0.3rem 0.5rem;
+          margin-left: 0.8rem; /* espace entre texte et icône */
+          margin-right: 0;     /* plus de margin à droite */
+        }
+      }
+    }
+    
+
+    button {
+      align-self: flex-end; /* <<< BOUTON À DROITE */
+      background-color: #bfa567;
+      color: #fff;
+      border: none;
+      padding: 0.9rem 2rem;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: #a68d57;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .listing {
+    flex-direction: column;
+
     .image {
-      flex: 1 1 420px;
-  
-      img {
-        width: 80%;
-        border-radius: 25px;
-        object-fit: cover;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-      }
+      order: 1;
+      display: flex;
+      justify-content: center;
     }
-  
+
     .content {
-      flex: 1 1 480px;
-  
-      h2 {
-        font-size: 3rem;
-        font-family: 'Athena', serif;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-      }
-  
-      p {
-        font-family: 'Bell MT', serif;
-        font-size: 1.2rem;
-        line-height: 1.7;
-        margin-bottom: 2rem;
-        color: #333;
-      }
-  
-      ul {
-        list-style: none;
-        padding: 0;
-        margin-bottom: 2rem;
-  
-        li {
-          display: flex;
-          align-items: center;
-          margin-bottom: 1rem;
-          font-style: italic;
-  
-          .icon {
-            background: #111;
-            color: #fff;
-            border-radius: 4px;
-            padding: 0.3rem 0.5rem;
-            margin-right: 0.8rem;
-          }
-        }
-      }
-  
-      button {
-        background-color: #bfa567;
-        color: #fff;
-        border: none;
-        padding: 0.9rem 2rem;
-        border-radius: 25px;
-        font-weight: 600;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background 0.3s ease;
-  
-        &:hover {
-          background-color: #a68d57;
-        }
-      }
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .listing {
-      flex-direction: column;
-  
-      .content {
+      order: 2;
+      align-items: center; /* texte recentré pour mobile */
+      
+      h2, p {
         text-align: center;
-  
-        ul li {
+      }
+
+      button {
+        align-self: center;
+      }
+
+      ul {
+        li {
           justify-content: center;
+          text-align: center;
         }
       }
     }
   }
-  
+}

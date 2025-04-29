@@ -20,7 +20,7 @@
   
     .text {
         flex: 1 1 500px;
-        margin-left: 8rem;
+        margin-left: 0rem;
       
         .item {
           margin-bottom: 3rem;
@@ -55,6 +55,7 @@
             color: #333;
             margin-left: 5rem;
             line-height: 1.6;
+            font-style: italic;
             max-width: 60%; // augmente un peu pour être + naturel
             padding-left: 2rem; // aligné avec le point et le titre
           }

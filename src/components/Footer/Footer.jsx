@@ -1,24 +1,27 @@
 import React from 'react';
 import styles from './Footer.module.scss';
-import { Facebook, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { FaTiktok } from 'react-icons/fa';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.columns}>
         <div className={styles.column}>
-          <h4>Product</h4>
+          <h4>Services</h4>
           <ul>
             <li>Acheter</li>
             <li>Vendre</li>
             <li>Estimer</li>
-            <li>Devenir acquéreur privilégié</li>
+            <li>Listing</li>
+            <li>Off-Market</li>
           </ul>
         </div>
 
         <div className={styles.column}>
-          <h4>Information</h4>
+          <h4>Informations</h4>
           <ul>
+            <li>Honoraires</li>
             <li>FAQ</li>
             <li>RGPD</li>
             <li>Support</li>
@@ -60,9 +63,18 @@ export default function Footer() {
         </div>
 
         <div className={styles.socials}>
-          <Linkedin size={18} />
-          <Facebook size={18} />
-          <Twitter size={18} />
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+            <Linkedin size={18} />
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <Facebook size={18} />
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <Instagram size={18} />
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+            <FaTiktok size={18} />
+          </a>
         </div>
       </div>
     </footer>

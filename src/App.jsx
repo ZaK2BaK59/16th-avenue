@@ -19,22 +19,24 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <Stats />
-      <Story />
-      <Services />
-      <ExclusiveAccess />
-      <OffMarketListing />
-      <FeaturedProperties />
-      <Commitment />
-      <Commitment2/>
-      <ClientReviews />
-      <Faq />
-      <Footer />
-
+      <main style={{ paddingTop: '100px' }}>
+        <Hero />
+        <Stats />
+        <Story />
+        <Services />
+        <ExclusiveAccess />
+        <OffMarketListing />
+        <FeaturedProperties />
+        <Commitment />
+        <Commitment2 />
+        <ClientReviews />
+        <Faq />
+        <Footer />
+      </main>
     </>
   );
 }
+
 
 
 export default App;
