@@ -105,7 +105,7 @@ export default function ModalContact({ onClose }) {
              <div className={styles.row}>
               <div>
                 <label>Surface</label>
-                <input type="text" placeholder="400m²" />
+                <input type="text" placeholder="200m²" />
               </div>
              
             </div>

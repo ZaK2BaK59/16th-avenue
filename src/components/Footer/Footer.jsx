@@ -40,7 +40,7 @@ export default function Footer() {
         <div className={styles.newsletter}>
           <h4>NewsLetter</h4>
           <div className={styles.inputWrapper}>
-            <input type="email" placeholder="Adresse Mail" />
+            <input type="email" placeholder="john@16th-avenue.fr" />
             <button>&rarr;</button>
           </div>
           <ul>
