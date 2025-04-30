@@ -79,16 +79,17 @@ export default function ModalContact({ onClose }) {
             {/* Ligne 3 */}
             <div className={styles.row}>
             <div>
-                <label>Type de bien</label>
-                <select>
-                  <option>Maison/villa</option>
-                  <option>Appartement</option>
-                  <option>Terrain</option>
-                  <option>Garage/Parking</option>
-                  <option>Immeuble de Rapport</option>
-                  <option>Hôtel</option>
-                  <option>Mur / Fond de commerce</option>
-                </select>
+            <label>Type de bien</label>
+<select>
+  <option>Appartement</option>
+  <option>Garage/Parking</option>
+  <option>Hôtel</option>
+  <option>Immeuble de Rapport</option>
+  <option>Maison/villa</option>
+  <option>Mur / Fond de commerce</option>
+  <option>Terrain</option>
+</select>
+
               </div>
               <div>
                 <label>Nombre de chambres</label>
@@ -105,11 +106,11 @@ export default function ModalContact({ onClose }) {
             {/* Ligne 4 */}
             <div className={styles.row}>
               <div>
-                <label>Localisation</label>
-                <input type="text" placeholder="Cannes" />
+                <label>Adresse du bien</label>
+                <input type="text" placeholder="Mon adresse" />
               </div>
               <div>
-                <label>Budget</label>
+                <label>Prix demandé</label>
                 <input type="text" placeholder="500.000" />
               </div>
             </div>
@@ -146,8 +147,9 @@ export default function ModalContact({ onClose }) {
 
             <button className={styles.submit}>Confirmer</button>
             <p className={styles.help}>
-              Besoin d’aide ? <a href="#">contactez nous</a>
-            </p>
+  <span style={{ color: '#000' }}>Besoin d’aide ? - </span>
+  <a href="#">contactez nous</a>
+</p>
           </form>
         </div>
       </div>

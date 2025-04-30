@@ -85,8 +85,9 @@ export default function ModalContact({ onClose }) {
 
             <button className={styles.submit}>Confirmer</button>
             <p className={styles.help}>
-              Besoin d’aide ? <a href="#">contactez nous</a>
-            </p>
+  <span style={{ color: '#000' }}>Besoin d’aide ? - </span>
+  <a href="#">contactez nous</a>
+</p>
           </form>
         </div>
       </div>

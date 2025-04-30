@@ -77,16 +77,17 @@ export default function ModalContact({ onClose }) {
             {/* Ligne 3 */}
             <div className={styles.row}>
             <div>
-                <label>Type de bien</label>
-                <select>
-                  <option>Maison/villa</option>
-                  <option>Appartement</option>
-                  <option>Terrain</option>
-                  <option>Garage/Parking</option>
-                  <option>Immeuble de Rapport</option>
-                  <option>Hôtel</option>
-                  <option>Mur / Fond de commerce</option>
-                </select>
+            <label>Type de bien</label>
+<select>
+  <option>Appartement</option>
+  <option>Garage/Parking</option>
+  <option>Hôtel</option>
+  <option>Immeuble de Rapport</option>
+  <option>Maison/villa</option>
+  <option>Mur / Fond de commerce</option>
+  <option>Terrain</option>
+</select>
+>
               </div>
               <div>
                 <label>Nombre de chambres</label>
@@ -139,13 +140,14 @@ export default function ModalContact({ onClose }) {
             {/* Message */}
             <div>
               <label>Message</label>
-              <input type="text" placeholder="Je souhaite acheter une villa moderne, secteur..." />
+              <input type="text" placeholder="Je souhaite acheter une villa moderne, critères particuliers" />
             </div>
 
             <button className={styles.submit}>Confirmer</button>
             <p className={styles.help}>
-              Besoin d’aide ? <a href="#">contactez nous</a>
-            </p>
+  <span style={{ color: '#000' }}>Besoin d’aide ? - </span>
+  <a href="#">contactez nous</a>
+</p>
           </form>
         </div>
       </div>
