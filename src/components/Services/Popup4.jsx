@@ -29,7 +29,7 @@ export default function ModalContact({ onClose }) {
 
         <div className={styles.content}>
           <div className={styles.imageSection}>
-            <img src="/villa-popup.png" alt="villa luxe" />
+            <img src="/M1.png" alt="villa luxe" />
           </div>
 
           <form className={styles.form}>
