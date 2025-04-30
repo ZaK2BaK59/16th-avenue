@@ -29,7 +29,7 @@ export default function ModalContact({ onClose }) {
 
         <div className={styles.content}>
           <div className={styles.imageSection}>
-            <img src="/1.png" alt="villa luxe" />
+            <img src="/Entreeoff.png" alt="villa luxe" />
           </div>
 
           <form className={styles.form}>
@@ -49,7 +49,7 @@ export default function ModalContact({ onClose }) {
             <div className={styles.row}>
               <div>
                 <label>Email</label>
-                <input type="email" placeholder="john@16thavenue.com" />
+                <input type="email" placeholder="john@16th-avenue.fr" />
               </div>
               <div>
                 <label>Numéro de téléphone</label>

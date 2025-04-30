@@ -47,7 +47,7 @@ export default function ModalContact({ onClose }) {
             <div className={styles.row}>
               <div>
                 <label>Email</label>
-                <input type="email" placeholder="john@16thavenue.com" />
+                <input type="email" placeholder="john@16th-avenue.fr" />
               </div>
               <div>
                 <label>Numéro de téléphone</label>

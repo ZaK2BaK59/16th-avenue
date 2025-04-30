@@ -26,7 +26,7 @@ export default function ModalContact({ onClose }) {
 
         <div className={styles.content}>
           <div className={styles.imageSection}>
-            <img src="/villa-popup.png" alt="villa luxe" />
+            <img src="/MaisonTheoule.png" alt="villa luxe" />
           </div>
 
           <form className={styles.form}>
@@ -46,7 +46,7 @@ export default function ModalContact({ onClose }) {
             <div className={styles.row}>
               <div>
                 <label>Email</label>
-                <input type="email" placeholder="john@16thavenue.com" />
+                <input type="email" placeholder="john@16th-avenue.fr" />
               </div>
               <div>
                 <label>Numéro de téléphone</label>

@@ -14,7 +14,6 @@ const StatBlock = ({ value, suffix, label, animate }) => {
   useEffect(() => {
     if (!animate) return;
 
-    let start = 0;
     const duration = 2000;
     const frameRate = 60;
     const totalFrames = Math.round((duration / 1000) * frameRate);
@@ -65,9 +64,7 @@ const Stats = () => {
       observer.observe(sectionRef.current);
     }
 
-    return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
-    };
+
   }, [hasAnimated]);
 
   return (

@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import styles from './FeaturedProperties.module.scss';
 
 const images = [
-    '/Calif-Vue.png',
-    '/Calif-Vue.png',
-    '/Calif-Vue.png',
+    '/Maison_2.jpg',
+    '/Maisonk.png',
+    '/Villa Piscine.png',
     '/Calif-Vue.png',
     '/Calif-Vue.png'
   ];
