@@ -20,6 +20,11 @@ export default function ModalContact({ onClose }) {
           <X size={24} />
         </button>
 
+        <h2 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '1.5rem' }}>
+  Listing Off-Market
+</h2>
+
+
         <div className={styles.content}>
           <div className={styles.imageSection}>
             <img src="/villa-popup.png" alt="villa luxe" />

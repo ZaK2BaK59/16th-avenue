@@ -75,7 +75,7 @@ export default function ModalContact({ onClose }) {
             {/* Ligne 4 */}
             <div className={styles.row}>
               <div>
-                <label>Localisation</label>
+                <label>Adresse</label>
                 <input type="text" placeholder="Cannes" />
               </div>
               <div>
@@ -90,7 +90,7 @@ export default function ModalContact({ onClose }) {
 
             {/* Rayon */}
             <div>
-  <label>Rayon : {radius} km</label>
+  <label>Surface : {radius} m²</label>
   <Grid container spacing={2} alignItems="center">
     <Grid item xs>
       <Slider
@@ -98,7 +98,7 @@ export default function ModalContact({ onClose }) {
         onChange={(e, newValue) => setRadius(newValue)}
         aria-labelledby="input-slider"
         min={1}
-        max={100}
+        max={5000}
         sx={{
           color: '#bfa567',
           width: '100%',         // ✅ occupe tout l’espace dispo

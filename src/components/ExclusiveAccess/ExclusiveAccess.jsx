@@ -1,8 +1,9 @@
 // src/components/ExclusiveAccess/ExclusiveAccess.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './ExclusiveAccess.module.scss';
 import { FaCheck } from 'react-icons/fa';
-import villa from '/M1.png'; // mets ta vraie image ici
+import Popup4 from '../Services/Popup4'; // ✅ ajout
+import villa from '/M1.png'; // image utilisée dans la section
 
 const points = [
   "Accès exclusif aux nouvelles annonces",
@@ -11,6 +12,8 @@ const points = [
 ];
 
 const ExclusiveAccess = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
   return (
     <section className={styles.exclusive}>
       <div className={styles.content}>
@@ -33,12 +36,16 @@ const ExclusiveAccess = () => {
             </li>
           ))}
         </ul>
-        <button>Rejoindre les Acquéreurs Privilégiés</button>
+        <button onClick={() => setShowPopup(true)}>
+          Rejoindre les Acquéreurs Privilégiés
+        </button>
       </div>
 
       <div className={styles.image}>
         <img src={villa} alt="Villa premium" />
       </div>
+
+      {showPopup && <Popup4 onClose={() => setShowPopup(false)} />}
     </section>
   );
 };
