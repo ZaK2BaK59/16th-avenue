@@ -54,6 +54,10 @@
     transform: scale(0.6);
     filter: blur(8px);
     z-index: 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
   }
   
   // image centrale (focus)
@@ -145,3 +149,42 @@
     .next { left: 50%; }
   }
   
+  .overlayInfos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.5rem;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 0.95rem;
+    font-family: 'Athena', serif;
+    color: #fff;
+  
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: contain;
+        filter: brightness(0) invert(1) contrast(150%);
+
+      }
+    
+      span {
+        font-size: 0.9rem;
+        color: white;
+        font-weight: bold; /* ✅ gras */
+      }
+    }
+    
+  }

@@ -5,8 +5,8 @@ const images = [
     '/Maison_2.jpg',
     '/Maisonk.png',
     '/Villa Piscine.png',
-    '/Calif-Vue.png',
-    '/Calif-Vue.png'
+    '/vendu.png',
+    '/vendu2.png'
   ];
   
 
@@ -44,10 +44,32 @@ const FeaturedProperties = () => {
   else className += ` ${styles.hidden}`;
 
   return (
-    <img key={i} src={src} alt={`maison-${i}`} className={className} />
+    <div key={i} className={className}>
+      <img src={src} alt={`maison-${i}`} />
+      {isActive && (
+        <div className={styles.overlayInfos}>
+        <div className={styles.info}>
+          <img src="/carre.png" alt="surface" />
+          <span>200m²</span>
+        </div>
+        <div className={styles.info}>
+          <img src="/terrain.png" alt="terrain" />
+          <span>500m²</span>
+        </div>
+        <div className={styles.info}>
+          <img src="/chambre.png" alt="chambres" />
+          <span>4</span>
+        </div>
+        <div className={styles.info}>
+          <img src="/sdb.png" alt="salle de bain" />
+          <span>2</span>
+        </div>
+      </div>
+      
+      )}
+    </div>
   );
 })}
-
       </div>
     </div>
   
