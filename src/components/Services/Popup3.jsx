@@ -1,6 +1,9 @@
 
 import styles from './Popup.module.scss';
 import { X } from 'lucide-react';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css'; // ou style-custom.css si tu veux personnaliser
+import '../../styles/phone-custom.css'; // Assurez-vous que le chemin est correct
 
 
 
@@ -17,6 +20,10 @@ export default function ModalContact({ onClose }) {
         <button className={styles.closeBtn} onClick={onClose}>
           <X size={24} />
         </button>
+        <h2 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '1.5rem', color: 'black !important' }}>
+  Projet immobilier
+</h2>
+
 
         <div className={styles.content}>
           <div className={styles.imageSection}>
@@ -44,7 +51,27 @@ export default function ModalContact({ onClose }) {
               </div>
               <div>
                 <label>Numéro de téléphone</label>
-                <input type="tel" placeholder="+33..." />
+                <PhoneInput
+  country={'fr'}
+  value={''}
+  onChange={() => {}}
+  inputStyle={{
+    width: '100%',
+    border: 'none',
+    borderBottom: '1px solid #ccc',
+    borderRadius: 0,
+    fontFamily: 'Athena, serif',
+    background: 'transparent',
+  }}
+  buttonStyle={{
+    border: 'none',
+    background: 'transparent',
+  }}
+  dropdownStyle={{
+    fontFamily: 'Athena, serif',
+  }}
+/>
+
               </div>
             </div>
 
@@ -53,7 +80,7 @@ export default function ModalContact({ onClose }) {
             {/* Message */}
             <div>
               <label>Message</label>
-              <input type="text" placeholder="Exemple…" />
+              <input type="text" placeholder="Décrire mon projet immobilier afin de se faire rappeler" />
             </div>
 
             <button className={styles.submit}>Confirmer</button>

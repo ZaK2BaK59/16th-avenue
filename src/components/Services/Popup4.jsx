@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import styles from './Popup.module.scss';
 import { X } from 'lucide-react';
 import Slider from '@mui/material/Slider';
-import Input from '@mui/material/Input';
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css'; // ou style-custom.css si tu veux personnaliser
 import Grid from '@mui/material/Grid';
+import '../../styles/phone-custom.css'; // Assurez-vous que le chemin est correct
 
 
 export default function ModalContact({ onClose }) {
@@ -51,7 +53,26 @@ export default function ModalContact({ onClose }) {
               </div>
               <div>
                 <label>Numéro de téléphone</label>
-                <input type="tel" placeholder="+33..." />
+                <PhoneInput
+  country={'fr'}
+  value={''}
+  onChange={() => {}}
+  inputStyle={{
+    width: '100%',
+    border: 'none',
+    borderBottom: '1px solid #ccc',
+    borderRadius: 0,
+    fontFamily: 'Athena, serif',
+    background: 'transparent',
+  }}
+  buttonStyle={{
+    border: 'none',
+    background: 'transparent',
+  }}
+  dropdownStyle={{
+    fontFamily: 'Athena, serif',
+  }}
+/>
               </div>
             </div>
 
@@ -60,9 +81,13 @@ export default function ModalContact({ onClose }) {
             <div>
                 <label>Type de bien</label>
                 <select>
-                  <option>Maison</option>
+                  <option>Maison/villa</option>
                   <option>Appartement</option>
                   <option>Terrain</option>
+                  <option>Garage/Parking</option>
+                  <option>Immeuble de Rapport</option>
+                  <option>Hôtel</option>
+                  <option>Mur / Fond de commerce</option>
                 </select>
               </div>
               <div>
@@ -85,11 +110,7 @@ export default function ModalContact({ onClose }) {
               </div>
               <div>
                 <label>Budget</label>
-                <select>
-                  <option>300.000</option>
-                  <option>500.000</option>
-                  <option>1.000.000+</option>
-                </select>
+                <input type="text" placeholder="500.000" />
               </div>
             </div>
 
@@ -119,8 +140,8 @@ export default function ModalContact({ onClose }) {
 
             {/* Message */}
             <div>
-              <label>Message</label>
-              <input type="text" placeholder="Exemple…" />
+              <label>Message - Critères spécifiques</label>
+              <input type="text" placeholder="Décrire mon projet pour recevoir les avants premières en correspondance" />
             </div>
 
             <button className={styles.submit}>Confirmer</button>

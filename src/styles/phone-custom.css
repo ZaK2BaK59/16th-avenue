@@ -1,0 +1,26 @@
+/* src/styles/phone-custom.css */
+
+.react-tel-input .country-name {
+    display: none !important;
+  }
+  
+  .react-tel-input .selected-flag {
+    padding-left: 8px !important;
+  }
+  
+  .react-tel-input .form-control {
+    padding-left: 48px !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+    font-family: 'Athena', serif !important;
+    font-size: 0.95rem !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+  
+  .react-tel-input .flag-dropdown {
+    background: transparent !important;
+    border: none !important;
+  }
+  

@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Popup.module.scss';
 import { X } from 'lucide-react';
-import Slider from '@mui/material/Slider';
-import Input from '@mui/material/Input';
-import Grid from '@mui/material/Grid';
+
+import '../../styles/phone-custom.css'; // Assurez-vous que le chemin est correct
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css'; // ou style-custom.css si tu veux personnaliser
 
 
 export default function ModalContact({ onClose }) {
-  const [radius, setRadius] = useState(5);
+
 
 
 
@@ -19,6 +20,9 @@ export default function ModalContact({ onClose }) {
         <button className={styles.closeBtn} onClick={onClose}>
           <X size={24} />
         </button>
+        <h2 style={{ textAlign: 'center', marginBottom: '2rem', fontSize: '1.5rem' }}>
+  Estimer mon bien
+</h2>
 
         <div className={styles.content}>
           <div className={styles.imageSection}>
@@ -46,7 +50,26 @@ export default function ModalContact({ onClose }) {
               </div>
               <div>
                 <label>Numéro de téléphone</label>
-                <input type="tel" placeholder="+33..." />
+                <PhoneInput
+  country={'fr'}
+  value={''}
+  onChange={() => {}}
+  inputStyle={{
+    width: '100%',
+    border: 'none',
+    borderBottom: '1px solid #ccc',
+    borderRadius: 0,
+    fontFamily: 'Athena, serif',
+    background: 'transparent',
+  }}
+  buttonStyle={{
+    border: 'none',
+    background: 'transparent',
+  }}
+  dropdownStyle={{
+    fontFamily: 'Athena, serif',
+  }}
+/>
               </div>
             </div>
 
@@ -55,9 +78,13 @@ export default function ModalContact({ onClose }) {
             <div>
                 <label>Type de bien</label>
                 <select>
-                  <option>Maison</option>
+                  <option>Maison/villa</option>
                   <option>Appartement</option>
                   <option>Terrain</option>
+                  <option>Garage/Parking</option>
+                  <option>Immeuble de Rapport</option>
+                  <option>Hôtel</option>
+                  <option>Mur / Fond de commerce</option>
                 </select>
               </div>
               <div>
@@ -75,47 +102,27 @@ export default function ModalContact({ onClose }) {
             {/* Ligne 4 */}
             <div className={styles.row}>
               <div>
-                <label>Adresse</label>
-                <input type="text" placeholder="Cannes" />
+                <label>Adresse du bien</label>
+                <input type="text" placeholder="Mon adresse" />
               </div>
-              <div>
-                <label>Budget</label>
-                <select>
-                  <option>300.000</option>
-                  <option>500.000</option>
-                  <option>1.000.000+</option>
-                </select>
-              </div>
+             
             </div>
 
             {/* Rayon */}
-            <div>
-  <label>Surface : {radius} m²</label>
-  <Grid container spacing={2} alignItems="center">
-    <Grid item xs>
-      <Slider
-        value={typeof radius === 'number' ? radius : 0}
-        onChange={(e, newValue) => setRadius(newValue)}
-        aria-labelledby="input-slider"
-        min={1}
-        max={5000}
-        sx={{
-          color: '#bfa567',
-          width: '100%',         // ✅ occupe tout l’espace dispo
-      minWidth: '500px' 
-        }}
-      />
-    </Grid>
-   
-  </Grid>
-</div>
+            <div className={styles.row}>
+              <div>
+                <label>Surface</label>
+                <input type="text" placeholder="400m²" />
+              </div>
+             
+            </div>
 
 
 
             {/* Message */}
             <div>
               <label>Message</label>
-              <input type="text" placeholder="Exemple…" />
+              <input type="text" placeholder="Je suis disponible pour une première approche le..." />
             </div>
 
             <button className={styles.submit}>Confirmer</button>
