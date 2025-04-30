@@ -87,7 +87,7 @@ export default function ModalContact({ onClose }) {
   <option>Mur / Fond de commerce</option>
   <option>Terrain</option>
 </select>
->
+
               </div>
               <div>
                 <label>Nombre de chambres</label>
