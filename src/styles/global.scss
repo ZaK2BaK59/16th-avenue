@@ -13,7 +13,9 @@
   
   html {
     font-size: 112.5%; // 100% = 16px, donc ici 18px ≈ zoom 112.5%
+    scroll-behavior: smooth;
   }
+  
   
   @font-face {
     font-family: 'Athena';

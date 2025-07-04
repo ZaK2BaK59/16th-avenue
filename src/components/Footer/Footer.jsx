@@ -1,42 +1,39 @@
 import React from 'react';
 import styles from './Footer.module.scss';
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import { FaTiktok } from 'react-icons/fa';
+
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.columns}>
+        {/* Services */}
         <div className={styles.column}>
           <h4>Services</h4>
           <ul>
-            <li>Acheter</li>
-            <li>Vendre</li>
-            <li>Estimer</li>
-            <li>Listing</li>
-            <li>Off-Market</li>
+            <li><a href="#acheter">Acheter</a></li>
+            <li><a href="#acheter">Vendre</a></li>
+            <li><a href="#acheter">Estimer</a></li>
+            <li><a href="#listing">Listing</a></li>
+            <li><a href="#offmarket">Off-Market</a></li>
           </ul>
         </div>
 
+        {/* Informations */}
         <div className={styles.column}>
           <h4>Informations</h4>
           <ul>
-            <li>Honoraires</li>
-            <li>FAQ</li>
-            <li>RGPD</li>
-            <li>Support</li>
-          </ul>
+  <li><a href="/honoraires.html">Honoraires</a></li>
+  <li><a href="#faq">FAQ</a></li>
+  <li><a href="/cookies.html">Cookies</a></li>
+</ul>
+
+
         </div>
 
-        <div className={styles.column}>
-          <h4>Company</h4>
-          <ul>
-            <li>A propos de nous</li>
-            <li>Carrière</li>
-            <li>Nous contacter</li>
-          </ul>
-        </div>
 
+        {/* Newsletter */}
         <div className={styles.newsletter}>
           <h4>NewsLetter</h4>
           <div className={styles.inputWrapper}>
@@ -51,16 +48,12 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Bas du footer */}
       <div className={styles.bottom}>
         <div className={styles.logo}>
           <img src="/footer.png" alt="logo 16 avenue" />
         </div>
 
-        <div className={styles.legal}>
-          <span>Conditions générales d’utilisation</span>
-          <span>Gestion des cookies</span>
-          <span>Politique de confidentialité</span>
-        </div>
 
         <div className={styles.socials}>
           <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
